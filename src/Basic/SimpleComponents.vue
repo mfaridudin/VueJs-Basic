@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import TodoItems from './components/TodoItems.vue';
+import TodoItems from '../components/TodoItems.vue';
 
 const text = ref([
   { id: 1, text: 'Belajar Vue.js' },

@@ -1,25 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import HelloWorld from '@/HelloWorld.vue';
-import HandlingUserInput from '@/HandleuserInput.vue';
-import AtributeBinding from '@/AttributeBindings.vue';
-import ConditionalsAndLoops from '@/ConditionalsAndLoops.vue';
-import FormBindings from '@/FormBindings.vue';
-import SimpleComponents from '@/SimpleComponents.vue';
-import MarkdownEditor from '@/MarkdownEditor.vue';
-import FetchingData from '@/FetchingData.vue';
-import GridWithSortAndFilter from '@/GridWithSortAndFilter.vue';
-import TreeView from '@/TreeView.vue';
-import ListWithTransitions from '@/ListWithTransitions .vue';
-import Counter from '@/Counter.vue';
-import TemperatureConverter from '@/TemperatureConverter.vue';
-import FlightBooker from '@/FlightBooker.vue';
-import Timer from '@/Timer.vue';
-import Crud from '@/Crud.vue';
-import CircleDrawer from '@/CircleDrawer.vue';
-import ShowModal from '@/ShowModal.vue';
-import SvgGraph from '@/SvgGrahp.vue';
-import Cells from '@/Cells.vue';
+import HelloWorld from '@/Basic/HelloWorld.vue';
+import HandlingUserInput from '@/Basic/HandleuserInput.vue';
+import AtributeBinding from '@/Basic/AttributeBindings.vue';
+import ConditionalsAndLoops from '@/Basic/ConditionalsAndLoops.vue';
+import FormBindings from '@/Basic/FormBindings.vue';
+import SimpleComponents from '@/Basic/SimpleComponents.vue';
+import MarkdownEditor from '@/Practical/MarkdownEditor.vue';
+import FetchingData from '@/Practical/FetchingData.vue';
+import GridWithSortAndFilter from '@/Practical/GridWithSortAndFilter.vue';
+import TreeView from '@/Practical/TreeView.vue';
+import ListWithTransitions from '@/Practical/ListWithTransitions .vue';
+import Counter from '@/7GUIs/Counter.vue';
+import TemperatureConverter from '@/7GUIs/TemperatureConverter.vue';
+import FlightBooker from '@/7GUIs/FlightBooker.vue';
+import Timer from '@/7GUIs/Timer.vue';
+import Crud from '@/7GUIs/Crud.vue';
+import CircleDrawer from '@/7GUIs/CircleDrawer.vue';
+import ShowModal from '@/Practical/ShowModal.vue';
+import SvgGraph from '@/Practical/SvgGrahp.vue';
+import Cells from '@/7GUIs/Cells.vue';
 
 const routes = [
     {

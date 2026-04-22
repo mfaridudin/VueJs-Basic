@@ -1,5 +1,5 @@
 <script setup>
-import PolyGraph from './components/PolyGraph.vue'
+import PolyGraph from '../components/PolyGraph.vue'
 import { ref, reactive } from 'vue'
 
 const newLabel = ref('')

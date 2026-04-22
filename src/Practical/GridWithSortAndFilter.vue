@@ -1,5 +1,5 @@
 <script setup>
-import DemoGrid from './components/Grid.vue'
+import DemoGrid from '../components/Grid.vue'
 import { ref } from 'vue'
 
 const searchQuery = ref('')

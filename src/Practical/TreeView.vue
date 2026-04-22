@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import TreeItem from './components/TreeItem.vue'
+import TreeItem from '../components/TreeItem.vue'
 
 const treeData = ref({
   name: 'My Tree',
@@ -31,6 +31,7 @@ const treeData = ref({
     <TreeItem class="item" :model="treeData"></TreeItem>
   </ul>
 </template>
+
 <style>
 .item {
   cursor: pointer;

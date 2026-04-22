@@ -1,5 +1,5 @@
 <script setup>
-import Modal from './components/Modal.vue'
+import Modal from '../components/Modal.vue'
 import { ref } from 'vue'
 
 const showModal = ref(false)
