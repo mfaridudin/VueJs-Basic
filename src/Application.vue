@@ -26,8 +26,8 @@ console.log(`Vue version: ${version}`)
   </div>
 
 
-    <RouterLink to="/application/setup">Setup()</RouterLink>
+  <RouterLink to="/application/setup">Setup()</RouterLink>
+  <RouterLink to="/application/ReactivityCore">Reactivity Core</RouterLink>
 
-
-      <router-view />
+  <router-view />
 </template>
