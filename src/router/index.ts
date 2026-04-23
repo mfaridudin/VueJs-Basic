@@ -21,6 +21,9 @@ import ShowModal from '@/Practical/ShowModal.vue';
 import SvgGraph from '@/Practical/SvgGrahp.vue';
 import Cells from '@/7GUIs/Cells.vue';
 
+// vue 3 setup
+import Setup from '@/CompositionAPI/Setup.vue';
+
 const routes = [
     {
         path: '/',
@@ -121,6 +124,14 @@ const routes = [
         path: '/cells',
         name: 'cells',
         component: Cells
+    },
+
+
+    // vue 3 setup
+    {
+        path: '/application/setup',
+        name: 'setup',
+        component: Setup
     }
 
 

@@ -1,6 +1,7 @@
 import { createApp, inject } from 'vue'
 
 import Application from './Application.vue' // mengambil file 
+import applicationRouter from './router/aplications' // mengambil file router
 
 const app = createApp(Application) // membuat aplikasi 
 
@@ -17,7 +18,7 @@ app.onUnmount(() => {
 //   }
 // })
 
-// app.use(router) // menggunakan plugin
+app.use(applicationRouter) // menggunakan plugin
 
 // app.provide('message', 'hello') // memberikan data ke semua komponen yang ada di dalam aplikasi
 

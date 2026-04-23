@@ -24,4 +24,10 @@ console.log(`Vue version: ${version}`)
     <h2 ref="judulRef">{{ judul }}</h2>
     <button @click="gantiJudul">Ganti Judul</button>
   </div>
+
+
+    <RouterLink to="/application/setup">Setup()</RouterLink>
+
+
+      <router-view />
 </template>
