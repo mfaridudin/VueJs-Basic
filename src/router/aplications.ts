@@ -6,6 +6,7 @@ import ReactivityUtilities from '@/CompositionAPI/ReactivityUtilities.vue'
 import ReactivityAdvanced from '@/CompositionAPI/ReactivityAdvanced.vue'
 import LifecycleHooks from '@/CompositionAPI/LifecycleHooks.vue'
 import DependencyInjection from '@/CompositionAPI/DependencyInjection.vue'
+import Halpers from '@/CompositionAPI/Helpers.vue'
 
 const routes = [
     // vue 3 setup
@@ -38,6 +39,11 @@ const routes = [
         path: '/application/DependencyInjection',
         name: 'DependencyInjection',
         component: DependencyInjection
+    },
+    {
+        path: '/application/Halpers',
+        name: 'Halpers',
+        component: Halpers
     },
 
 ];

@@ -31,6 +31,7 @@ console.log(`Vue version: ${version}`)
   <RouterLink to="/application/ReactivityUtilities">Reactivity Utilities</RouterLink>
   <RouterLink to="/application/ReactivityAdvanced">Reactivity Advanced</RouterLink>
   <RouterLink to="/application/LifecycleHooks">Lifecycle Hooks</RouterLink>
-    <RouterLink to="/application/DependencyInjection">Dependency Injection</RouterLink>
+  <RouterLink to="/application/DependencyInjection">Dependency Injection</RouterLink>
+  <RouterLink to="/application/Halpers">Halpers</RouterLink>
   <router-view />
 </template>
