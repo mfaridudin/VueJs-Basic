@@ -5,6 +5,7 @@ import ReactivityCore from '@/CompositionAPI/ReactivityCore.vue';
 import ReactivityUtilities from '@/CompositionAPI/ReactivityUtilities.vue'
 import ReactivityAdvanced from '@/CompositionAPI/ReactivityAdvanced.vue'
 import LifecycleHooks from '@/CompositionAPI/LifecycleHooks.vue'
+import DependencyInjection from '@/CompositionAPI/DependencyInjection.vue'
 
 const routes = [
     // vue 3 setup
@@ -32,6 +33,11 @@ const routes = [
         path: '/application/LifecycleHooks',
         name: 'LifecycleHooks',
         component: LifecycleHooks
+    },
+    {
+        path: '/application/DependencyInjection',
+        name: 'DependencyInjection',
+        component: DependencyInjection
     },
 
 ];
