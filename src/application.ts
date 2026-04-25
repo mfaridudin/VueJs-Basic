@@ -2,8 +2,15 @@ import { createApp, inject } from 'vue'
 
 import Application from './Application.vue' // mengambil file 
 import applicationRouter from './router/aplications' // mengambil file router
+import { defineCustomElement } from 'vue'
+import PengukurLebar from './components/PengukurLebar.ce.vue'
 
 const app = createApp(Application) // membuat aplikasi 
+
+const ElemenKustom = defineCustomElement(PengukurLebar)
+
+// Mendaftarkan tag <pengukur-lebar> ke browser
+customElements.define('pengukur-lebar', ElemenKustom)
 
 app.onUnmount(() => {
     console.log('Aplikasi di matikan 😈')  //pesan saat di unmount
@@ -33,6 +40,8 @@ app.use(applicationRouter) // menggunakan plugin
 // app.config.errorHandler = (err, vm, info) => {
 //   alert("Maaf, terjadi kesalahan teknis. Tim kami sedang memperbaikinya.")
 // } // menangani error global
+
+// Mengubah komponen Vue menjadi Custom Element standar
 
 
 app.mount('#app') // mengirimnya file html
