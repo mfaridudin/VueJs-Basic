@@ -48,6 +48,7 @@ console.log(`Vue version: ${version}`)
     <h2>Built-ins</h2>
     <RouterLink to="/application/Directives">Directives</RouterLink>
     <RouterLink to="/application/Components">Components</RouterLink>
+    <RouterLink to="/application/SpecialElements">SpecialElements</RouterLink>
   </div>
 
   <router-view />
