@@ -44,6 +44,10 @@ console.log(`Vue version: ${version}`)
     <RouterLink to="/application/OptionsMisc">OptionsMisc</RouterLink>
     <RouterLink to="/application/ComponentInstance">ComponentInstance</RouterLink>
   </div>
+  <div>
+    <h2>Built-ins</h2>
+    <RouterLink to="/application/Directives">Directives</RouterLink>
+  </div>
 
   <router-view />
 </template>

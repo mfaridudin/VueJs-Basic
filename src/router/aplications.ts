@@ -13,6 +13,7 @@ import OptionsLifecycle from '@/OptionsAPI/OptionsLifecycle.vue'
 import OptionsComposition from '@/OptionsAPI/OptionsComposition.vue'
 import OptionsMisc from '@/OptionsAPI/OptionsMisc.vue'
 import ComponentInstance from '@/OptionsAPI/ComponentInstance.vue'
+import Directives from '@/Built-ins/Directives.vue'
 
 const routes = [
     // vue 3 setup
@@ -80,6 +81,11 @@ const routes = [
         path: '/application/ComponentInstance',
         name: 'ComponentInstance',
         component: ComponentInstance
+    },
+    {
+        path: '/application/Directives',
+        name: 'Directives',
+        component: Directives
     },
 
 ];
