@@ -40,6 +40,7 @@ console.log(`Vue version: ${version}`)
     <RouterLink to="/application/OptionsState">OptionsState</RouterLink>
     <RouterLink to="/application/OptionsRendering">OptionsRendering</RouterLink>
     <RouterLink to="/application/OptionsLifecycle">OptionsLifecycle</RouterLink>
+    <RouterLink to="/application/OptionsComposition">OptionsComposition</RouterLink>
   </div>
 
   <router-view />
