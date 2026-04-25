@@ -11,6 +11,7 @@ import OptionsState from '@/OptionsAPI/OptionsState.vue'
 import OptionsRendering from '@/OptionsAPI/OptionsRendering.vue'
 import OptionsLifecycle from '@/OptionsAPI/OptionsLifecycle.vue'
 import OptionsComposition from '@/OptionsAPI/OptionsComposition.vue'
+import OptionsMisc from '@/OptionsAPI/OptionsMisc.vue'
 
 const routes = [
     // vue 3 setup
@@ -68,6 +69,11 @@ const routes = [
         path: '/application/OptionsComposition',
         name: 'OptionsComposition',
         component: OptionsComposition
+    },
+    {
+        path: '/application/OptionsMisc',
+        name: 'OptionsMisc',
+        component: OptionsMisc
     },
 
 ];
