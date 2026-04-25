@@ -24,7 +24,7 @@ const BoxWrapper = {
 <template>
     <div class="p-5">
         <!-- Tag ini <template>digunakan sebagai placeholder ketika kita ingin menggunakan directive bawaan tanpa merender elemen di DOM. -->
-        <template v-if="isActive"> 
+        <template v-if="isActive">
             <h1>Selamat Datang!</h1>
             <p>Ini adalah demo Special Elements.</p>
         </template>
@@ -36,6 +36,7 @@ const BoxWrapper = {
             <button @click="tabAktif = TabB">Tampilkan Tab B</button>
 
             <div class="tab-content border p-3 mt-2">
+                <!-- elemen <component> adalah sebuah "meta-component" atau komponen bayangan yang digunakan untuk menampilkan komponen lain secara dinamis. -->
                 <component :is="tabAktif" />
             </div>
         </div>

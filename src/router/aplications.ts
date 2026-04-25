@@ -16,6 +16,7 @@ import ComponentInstance from '@/OptionsAPI/ComponentInstance.vue'
 import Directives from '@/Built-ins/Directives.vue'
 import Components from '@/Built-ins/Components.vue'
 import SpecialElements from '@/Built-ins/SpecialElements.vue'
+import SpecialAttributes from '@/Built-ins/SpecialAttributes.vue'
 
 const routes = [
     // vue 3 setup
@@ -98,6 +99,11 @@ const routes = [
         path: '/application/SpecialElements',
         name: 'SpecialElements',
         component: SpecialElements
+    },
+    {
+        path: '/application/SpecialAttributes',
+        name: 'SpecialAttributes',
+        component: SpecialAttributes
     },
 
 ];
