@@ -25,13 +25,20 @@ console.log(`Vue version: ${version}`)
     <button @click="gantiJudul">Ganti Judul</button>
   </div>
 
+  <div>
+    <h2>Composition API</h2>
+    <RouterLink to="/application/setup">Setup()</RouterLink>
+    <RouterLink to="/application/ReactivityCore">Reactivity Core</RouterLink>
+    <RouterLink to="/application/ReactivityUtilities">Reactivity Utilities</RouterLink>
+    <RouterLink to="/application/ReactivityAdvanced">Reactivity Advanced</RouterLink>
+    <RouterLink to="/application/LifecycleHooks">Lifecycle Hooks</RouterLink>
+    <RouterLink to="/application/DependencyInjection">Dependency Injection</RouterLink>
+    <RouterLink to="/application/Halpers">Halpers</RouterLink>
+  </div>
+  <div>
+    <h2>Options API</h2>
+    <RouterLink to="/application/OptionsState">OptionsState</RouterLink>
+  </div>
 
-  <RouterLink to="/application/setup">Setup()</RouterLink>
-  <RouterLink to="/application/ReactivityCore">Reactivity Core</RouterLink>
-  <RouterLink to="/application/ReactivityUtilities">Reactivity Utilities</RouterLink>
-  <RouterLink to="/application/ReactivityAdvanced">Reactivity Advanced</RouterLink>
-  <RouterLink to="/application/LifecycleHooks">Lifecycle Hooks</RouterLink>
-  <RouterLink to="/application/DependencyInjection">Dependency Injection</RouterLink>
-  <RouterLink to="/application/Halpers">Halpers</RouterLink>
   <router-view />
 </template>
