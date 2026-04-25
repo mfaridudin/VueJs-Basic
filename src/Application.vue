@@ -58,6 +58,10 @@ console.log(`Vue version: ${version}`)
     <RouterLink to="/application/ScriptSetup">ScriptSetup</RouterLink>
     <RouterLink to="/application/CSSFeatures">CSSFeatures</RouterLink>
   </div>
+  <div>
+    <h2>Advanced APIs</h2>
+    <RouterLink to="/application/RenderFunction">RenderFunction</RouterLink>
+  </div>
 
   <router-view />
 </template>

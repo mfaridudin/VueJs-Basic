@@ -20,6 +20,7 @@ import SpecialAttributes from '@/Built-ins/SpecialAttributes.vue'
 import SyntaxSpecification from '@/SingleFileComponent/SyntaxSpecification.vue'
 import ScriptSetup from '@/SingleFileComponent/ScriptSetup.vue'
 import CSSFeatures from '@/SingleFileComponent/CSSFeatures.vue'
+import RenderFunction from '@/AdvancedAPIs/RenderFunction.vue'
 
 const routes = [
     // vue 3 setup
@@ -122,6 +123,11 @@ const routes = [
         path: '/application/CSSFeatures',
         name: 'CSSFeatures',
         component: CSSFeatures
+    },
+    {
+        path: '/application/RenderFunction',
+        name: 'RenderFunction',
+        component: RenderFunction
     },
 
 ];
