@@ -9,6 +9,7 @@ import DependencyInjection from '@/CompositionAPI/DependencyInjection.vue'
 import Halpers from '@/CompositionAPI/Helpers.vue'
 import OptionsState from '@/OptionsAPI/OptionsState.vue'
 import OptionsRendering from '@/OptionsAPI/OptionsRendering.vue'
+import OptionsLifecycle from '@/OptionsAPI/OptionsLifecycle.vue'
 
 const routes = [
     // vue 3 setup
@@ -56,6 +57,11 @@ const routes = [
         path: '/application/OptionsRendering',
         name: 'OptionsRendering',
         component: OptionsRendering
+    },
+    {
+        path: '/application/OptionsLifecycle',
+        name: 'OptionsLifecycle',
+        component: OptionsLifecycle
     },
 
 ];
