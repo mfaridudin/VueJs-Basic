@@ -38,6 +38,7 @@ console.log(`Vue version: ${version}`)
   <div>
     <h2>Options API</h2>
     <RouterLink to="/application/OptionsState">OptionsState</RouterLink>
+    <RouterLink to="/application/OptionsRendering">OptionsRendering</RouterLink>
   </div>
 
   <router-view />
