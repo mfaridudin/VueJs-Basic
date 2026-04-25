@@ -52,5 +52,12 @@ console.log(`Vue version: ${version}`)
     <RouterLink to="/application/SpecialAttributes">SpecialAttributes</RouterLink>
   </div>
 
+  <div>
+    <h2>Single-File Component</h2>
+    <RouterLink to="/application/SyntaxSpecification">SyntaxSpecification</RouterLink>
+    <RouterLink to="/application/ScriptSetup">ScriptSetup</RouterLink>
+    <RouterLink to="/application/CSSFeatures">CSSFeatures</RouterLink>
+  </div>
+
   <router-view />
 </template>

@@ -17,6 +17,9 @@ import Directives from '@/Built-ins/Directives.vue'
 import Components from '@/Built-ins/Components.vue'
 import SpecialElements from '@/Built-ins/SpecialElements.vue'
 import SpecialAttributes from '@/Built-ins/SpecialAttributes.vue'
+import SyntaxSpecification from '@/SingleFileComponent/SyntaxSpecification.vue'
+import ScriptSetup from '@/SingleFileComponent/ScriptSetup.vue'
+import CSSFeatures from '@/SingleFileComponent/CSSFeatures.vue'
 
 const routes = [
     // vue 3 setup
@@ -104,6 +107,21 @@ const routes = [
         path: '/application/SpecialAttributes',
         name: 'SpecialAttributes',
         component: SpecialAttributes
+    },
+    {
+        path: '/application/SyntaxSpecification',
+        name: 'SyntaxSpecification',
+        component: SyntaxSpecification
+    },
+    {
+        path: '/application/ScriptSetup',
+        name: 'ScriptSetup',
+        component: ScriptSetup
+    },
+    {
+        path: '/application/CSSFeatures',
+        name: 'CSSFeatures',
+        component: CSSFeatures
     },
 
 ];
