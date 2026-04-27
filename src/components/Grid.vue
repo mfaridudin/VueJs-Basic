@@ -15,7 +15,7 @@ const sortOrders = ref(
 const filteredData = computed(() => {
   let { data, filterKey } = props
   if (filterKey) {
-    filterKey = filterKey.toLowerCase
+    filterKey = filterKey.toLowerCase()
     data = data.filter((row) => {
       return Object.keys(row).some((key) => {
         return String(row[key]).toLowerCase().indexOf(filterKey) > -1
@@ -48,9 +48,7 @@ function capitalize(str) {
   <table v-if="filteredData.length">
     <thead>
       <tr>
-        <th v-for="key in columns"
-          @click="sortBy(key)"
-          :class="{ active: sortKey == key }">
+        <th v-for="key in columns" @click="sortBy(key)" :class="{ active: sortKey == key }">
           {{ capitalize(key) }}
           <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
           </span>
@@ -60,7 +58,7 @@ function capitalize(str) {
     <tbody>
       <tr v-for="entry in filteredData">
         <td v-for="key in columns">
-          {{entry[key]}}
+          {{ entry[key] }}
         </td>
       </tr>
     </tbody>

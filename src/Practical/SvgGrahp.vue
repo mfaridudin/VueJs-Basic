@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 import PolyGraph from '../components/PolyGraph.vue'
 import { ref, reactive } from 'vue'
 
@@ -32,23 +32,29 @@ function remove(stat) {
 </script>
 
 <template>
+  <!-- GRAPH -->
   <svg width="200" height="200">
-    <PolyGraph :stats="stats"></PolyGraph>
+    <PolyGraph :stats="stats" />
   </svg>
 
-  <!-- controls -->
-  <div v-for="stat in stats">
-    <label>{{stat.label}}</label>
-    <input type="range" v-model="stat.value" min="0" max="100">
-    <span>{{stat.value}}</span>
-    <button @click="remove(stat)" class="remove">X</button>
+  <!-- CONTROLS -->
+  <div v-for="stat in stats" :key="stat.label">
+    <label>{{ stat.label }}</label>
+
+    <input type="range" v-model.number="stat.value" min="0" max="100">
+
+    <span>{{ stat.value }}</span>
+
+    <button @click="remove(stat)">X</button>
   </div>
 
-  <form id="add">
-    <input name="newlabel" v-model="newLabel">
-    <button @click="add">Add a Stat</button>
+  <!-- FORM -->
+  <form @submit.prevent="add">
+    <input v-model="newLabel" placeholder="Label baru">
+    <button type="submit">Add</button>
   </form>
 
+  <!-- DEBUG -->
   <pre id="raw">{{ stats }}</pre>
 </template>
 
