@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup>
 import PolyGraph from '../components/PolyGraph.vue'
 import { ref, reactive } from 'vue'
 
@@ -32,33 +32,71 @@ function remove(stat) {
 </script>
 
 <template>
-  <!-- GRAPH -->
-  <svg width="200" height="200">
-    <PolyGraph :stats="stats" />
+  <svg class="svg" width="200" height="200">
+    <PolyGraph :stats="stats"></PolyGraph>
   </svg>
+  <!-- controls -->
+  <div class="controls-container">
+    <div v-for="stat in stats" class="control-row">
+      <label>{{ stat.label }}</label>
+      <input type="range" v-model.number="stat.value" min="0" max="100">
+      <span class="value-text">{{ stat.value }}</span>
+      <button @click="remove(stat)" class="remove-btn">X</button>
+    </div>
 
-  <!-- CONTROLS -->
-  <div v-for="stat in stats" :key="stat.label">
-    <label>{{ stat.label }}</label>
-
-    <input type="range" v-model.number="stat.value" min="0" max="100">
-
-    <span>{{ stat.value }}</span>
-
-    <button @click="remove(stat)">X</button>
+    <form class="form_add" id="add">
+      <input name="newlabel" v-model="newLabel">
+      <button @click="add">Add a Stat</button>
+    </form>
   </div>
 
-  <!-- FORM -->
-  <form @submit.prevent="add">
-    <input v-model="newLabel" placeholder="Label baru">
-    <button type="submit">Add</button>
-  </form>
-
-  <!-- DEBUG -->
   <pre id="raw">{{ stats }}</pre>
+
 </template>
 
 <style>
+.controls-container {
+  position: absolute;
+  left: 500px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.form_add {
+  display: flex;
+  gap: 12px;
+}
+
+label {
+  width: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="range"] {
+  flex: 1;
+  cursor: pointer;
+}
+
+.value-text {
+  width: 30px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.remove-btn {
+  padding: 2px 6px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
 polygon {
   fill: #42b983;
   opacity: 0.75;
@@ -74,6 +112,14 @@ text {
   fill: #666;
 }
 
+svg {
+  position: absolute;
+  left: 300px;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+}
+
 label {
   display: inline-block;
   margin-left: 10px;
@@ -82,7 +128,7 @@ label {
 
 #raw {
   position: absolute;
-  top: 0;
-  left: 300px;
+  top: 20px;
+  left: 900px;
 }
 </style>

@@ -14,5 +14,5 @@ const point = computed(() =>
 </script>
 
 <template>
-  <text :x="point.x" :y="point.y">{{stat.label}}</text>
+  <text :x="point.x" :y="point.y">{{ stat.label }}</text>
 </template>
